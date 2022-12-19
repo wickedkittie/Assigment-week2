@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <style>
+        body {
+            background-color: rgb(208, 175, 240);
+        }
+        form { max-width:420px; 
+               margin:50px auto;
+               
+             }
+
+        input[type=text],select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 60px;
+        }
+    </style>
+</head>
+    <body>
+        <a href="index.html">Back to home</a>
+        <h1>CONTACT US</h1>
+
+        <form>
+            
+
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your first name" required><br>
+
+            <label for="fname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" required><br>
+
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="Your email" required><br>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write message"></textarea><br>
+
+            <label for="priority">Priority</label>
+                <select  id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="med">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+            <input type="submit" value="Submit">
+        </form>        
+                
+    </body>
+</html>
